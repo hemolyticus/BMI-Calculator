@@ -60,6 +60,39 @@ class ViewController: NSViewController {
     }
     
     
+    func setUnits()
+    {
+        if segControl.selectedSegment == 0
+        {
+            //US Measures
+            lblHeight.stringValue = "Height Inches"
+            lblWeight.stringValue = "Weight Pounds"
+            sliderH.minValue = 36
+            sliderH.maxValue = 96
+            sliderW.minValue = 60
+            sliderW.maxValue = 400
+            
+        }
+        else
+        {
+            //US Measures
+            lblHeight.stringValue = "Height CM"
+            lblWeight.stringValue = "Weight KG"
+            sliderH.minValue = 90
+            sliderH.maxValue = 250
+            sliderW.minValue = 25
+            sliderW.maxValue = 200
+            
+        }
+        
+        sliderH.doubleValue = sliderH.minValue
+        sliderW.doubleValue = sliderW.minValue
+        txtBMI .stringValue = ""
+        txtW.stringValue = ""
+        txtH.stringValue = ""
+        
+    }
+    
 
 
 }
