@@ -32,7 +32,8 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        segControl.selectedSegment = 0
+        setUnits()
     }
 
     override var representedObject: Any? {
