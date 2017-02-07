@@ -107,6 +107,12 @@ class ViewController: NSViewController {
     }
     
     
+    
+    @IBAction func segmentChanged(_ sender: Any) {
+        
+        setUnits()
+    }
+    
 
 
 }

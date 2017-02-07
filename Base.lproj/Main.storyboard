@@ -793,6 +793,9 @@
                                         <segment label="Metric Measures" tag="1"/>
                                     </segments>
                                 </segmentedCell>
+                                <connections>
+                                    <action selector="segmentChanged:" target="XfG-lQ-9wD" id="Xld-Il-4ze"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                     </view>
