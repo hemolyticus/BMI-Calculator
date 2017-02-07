@@ -94,6 +94,19 @@ class ViewController: NSViewController {
         
     }
     
+    
+    @IBAction func sliderWChanged(_ sender: NSSlider) {
+        txtW.integerValue = sender.integerValue
+        setBMI()
+    }
+    
+    
+    @IBAction func sliderHChanged(_ sender: NSSlider) {
+        txtH.integerValue = sender.integerValue
+        setBMI()
+    }
+    
+    
 
 
 }

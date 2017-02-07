@@ -698,12 +698,18 @@
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dUS-dI-krd">
                                 <rect key="frame" x="18" y="168" width="444" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="k8c-Bu-tDd"/>
+                                <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="k8c-Bu-tDd"/>
+                                <connections>
+                                    <action selector="sliderWChanged:" target="XfG-lQ-9wD" id="Tfj-Lt-Qya"/>
+                                </connections>
                             </slider>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gqx-0f-vvl">
                                 <rect key="frame" x="18" y="100" width="444" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="167-HI-fgm"/>
+                                <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="167-HI-fgm"/>
+                                <connections>
+                                    <action selector="sliderHChanged:" target="XfG-lQ-9wD" id="K3X-sd-D3E"/>
+                                </connections>
                             </slider>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOh-9a-ZVA">
                                 <rect key="frame" x="267" y="76" width="98" height="17"/>
