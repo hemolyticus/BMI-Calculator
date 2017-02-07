@@ -40,6 +40,26 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
+    
+    
+    func setBMI()
+    {
+        var BMI = 0.0
+        
+        if segControl.selectedSegment == 0
+        {
+            //US
+            BMI = sliderW.doubleValue / (sliderH.doubleValue * sliderH.doubleValue) * 703
+        }
+        else{
+            //Metric
+            BMI = sliderW.doubleValue / ((sliderH.doubleValue / 100 ) * (sliderH.doubleValue / 100))
+        }
+        
+        txtBMI.stringValue = String(format: "%.1f", BMI)
+    }
+    
+    
 
 
 }
