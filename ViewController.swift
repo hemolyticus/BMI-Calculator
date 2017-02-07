@@ -66,6 +66,7 @@ class ViewController: NSViewController {
         if segControl.selectedSegment == 0
         {
             //US Measures
+            self.view.window?.title = "BMI US Units"
             lblHeight.stringValue = "Height Inches"
             lblWeight.stringValue = "Weight Pounds"
             sliderH.minValue = 36
@@ -76,7 +77,8 @@ class ViewController: NSViewController {
         }
         else
         {
-            //US Measures
+            //Metric
+            self.view.window?.title = "BMI Metric Units"
             lblHeight.stringValue = "Height CM"
             lblWeight.stringValue = "Weight KG"
             sliderH.minValue = 90
